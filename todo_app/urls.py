@@ -27,4 +27,4 @@ urlpatterns = [
         views.ItemDelete.as_view(),
         name="item-delete",
     ),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
